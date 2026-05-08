@@ -16,11 +16,18 @@ keyboard.diode_orientation = DiodeOrientation.COL2ROW
 keyboard.modules.append(Layers())
 
 # Layer 0: Physical Layout
-#   TG                                             BKSP
+#   TG(1)                                          BKSP
 #   ESC  Q    W    E    R   T   Y    U    I  O     P
 #   TAB  A    S    D    F   G   H    J    K  L     /
 #   LSFT Z    X    C    V   B   N    M    ,  .     ENT
 #        LCTL LALT LGUI FN  SPC LEFT DOWN UP RIGHT
+
+# Layer 1: Physical Layout
+#   TG(0)                                          DEL
+#   ESC  1    2    3    4   5   6    7    8  9     0
+#   F1   -    =    (    )   |   ;    '    \  ~     F12
+#   LSFT F2   F3   F4   F5  F6  F7   F8   F9  F10  ENT
+#        LCTL LALT LGUI FN  SPC HOME PGDN PGUP END
 
 FN = KC.MO(1)
 
@@ -33,7 +40,7 @@ keyboard.keymap = [
     ],
     [# layer 1: Terminal Symbols & CLI Nav
         KC.TRNS,   KC.N1,   KC.N2,   KC.N3,   KC.N4,   KC.N5,   KC.N6,    KC.N7,    KC.N8,   KC.N9,      KC.DEL,
-        KC.GRV,    KC.MINS, KC.EQL,  KC.LBRC, KC.RBRC, KC.PIPE, KC.SCLN,  KC.QUOT,  KC.BSLS, KC.TILD,    KC.N0,
+        KC.GRV,    KC.MINS, KC.EQL,  KC.LBRC, KC.RBRC, KC.PIPE, KC.SCLN,  KC.QUOT,  KC.BSLS, KC.TILD,    KC.NO,
         KC.F1,     KC.F2,   KC.F3,   KC.F4,   KC.F5,   KC.F6,   KC.F7,    KC.F8,    KC.F9,   KC.F10,     KC.F12,
         KC.TRNS,   KC.TRNS,  KC.TRNS, KC.TRNS, KC.TRNS, KC.TRNS, KC.HOME,  KC.PGDN,  KC.PGUP, KC.END,     KC.TRNS,
     ]
